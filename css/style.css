@@ -392,18 +392,21 @@ body {
         height: 20px;
     }
 
-    .card {
-        width: 44vw;
-    }
-
+/* 
     .cardContainer {
         justify-content: center;
         margin: 10px 0;
         max-height: 57vh;
-        /* overflow: unset; */
+    } */
+
+    .cardContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: unset;
+        overflow-y: unset;
+        margin-bottom: 25vh;
     }
-
-
 
     .abovebar {
         flex-direction: column;
@@ -434,7 +437,6 @@ body {
 
 @media (max-width: 400px) {
     .card {
-        /* width: 80vw; */
         width: 100% !important;
     }
 
@@ -463,11 +465,16 @@ body {
 
     .card:hover .play {
         opacity: 1;
-        top: 245px !important;
+        top: 195px !important;
     }
 
     .library {
         height: 85vh;
+    }
+
+    .left{
+        width: 100 !important;
+        height: auto;
     }
 }
 
